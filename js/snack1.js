@@ -8,6 +8,8 @@ Esegui questo programma in due versioni, con il for e con il while.
 3- stampiano la somma dei 5 numeri
 */
 
+var display = document.getElementById('display');
+
 // variabile d'appoggio
 
 var sum = 0;
@@ -25,7 +27,7 @@ for (var i = 0; i < 5; i++) {
 
 var i = 0;
 while (i < 5) {
-    var userNumber = parseInt(prompt('inserisci un numero'));
+    var userNumber = parseInt(prompt('ES 1: inserisci un numero'));
     sum += userNumber;
 
     i++;
@@ -33,4 +35,4 @@ while (i < 5) {
 
 //stampa
 
-console.log(sum);
+display.innerHTML = sum;

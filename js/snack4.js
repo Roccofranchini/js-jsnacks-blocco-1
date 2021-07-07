@@ -14,6 +14,8 @@ fino a quando ne avrà tanti quanti l’altro
 
 var nList1 = ['1', '2', '3', '4', '8', '10'];
 var nList2 = ['1', '2', '3'];
+var display4 = document.getElementById('display4');
+var display5 = document.getElementById('display5');
 
 // pushiamo attraverso il while i numeri nella lista più corta
 
@@ -35,8 +37,7 @@ while (nList1.length !== nList2.length) {
 
 // stampiamo
 
-console.log(nList1);
-console.log(nList2);
-
+display4.innerHTML = nList1;
+display5.innerHTML = nList2;
 
 

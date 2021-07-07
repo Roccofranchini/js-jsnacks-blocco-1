@@ -14,11 +14,12 @@ SNACK 3: Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e
 var fakeList = [];
 var nameList = ['Anna', 'Carla', 'Gioia', 'Luca', 'Armando', 'Giorgio'];
 var surnameList = ['Pignatiello', 'De Simone', 'Carlini', 'Chiaravanzo', 'Maffia', 'Rimolo'];
+var display3 = document.getElementById('display3');
 
 
 // creiamo un ciclo
 while (fakeList.length < 3) {
-    var nameRandom = nameList[Math.floor(Math.random() * 6)] + ' ' + surnameList[Math.floor(Math.random() * 6)] + ' ';
+    var nameRandom = ' ' + nameList[Math.floor(Math.random() * 6)] + ' ' + surnameList[Math.floor(Math.random() * 6)] + ' ';
 
     if (!fakeList.includes(nameRandom)) {
         fakeList.push(nameRandom);
@@ -26,4 +27,4 @@ while (fakeList.length < 3) {
 }
 
 // stampiamo
-console.log(fakeList);
+display3.innerHTML = fakeList;

@@ -41,3 +41,27 @@ display4.innerHTML = nList1;
 display5.innerHTML = nList2;
 
 
+var listElement = '';
+
+for (var i = 0; i < nList1.length; i++) {
+
+    console.log(listElement);
+
+    listElement += '<li>' + nList1[i] + '</li>';
+}
+
+
+display4.innerHTML = listElement;
+
+
+var listElement2 = '';
+
+for (var i = 0; i < nList2.length; i++) {
+
+    console.log(listElement2);
+
+    listElement2 += '<li>' + nList2[i] + '</li>';
+}
+
+
+display5.innerHTML = listElement2;

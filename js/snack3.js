@@ -27,4 +27,13 @@ while (fakeList.length < 3) {
 }
 
 // stampiamo
-display3.innerHTML = fakeList;
+
+var listElement = '';
+
+for (var i = 0; i < fakeList.length; i++) {
+
+    listElement += '<li>' + fakeList[i] + '</li>';
+}
+
+
+display3.innerHTML = listElement;

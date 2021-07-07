@@ -34,12 +34,3 @@ while (i < 5) {
 //stampa
 
 console.log(sum);
-
-
-/*
-SNACK 2: Chiedi un numero all'utente, se è pari stampa il numero,
-se è dispari stampa il numero successivo.
-
-1- creiamo una variabile il cui valore è chiesto all'utente con un prompt
-2- se è pari
-*/
